@@ -7,7 +7,7 @@ const guestbook = {
   get() {
     return $.ajax({
       type: 'GET',
-      url: https://eu-gb.functions.appdomain.cloud/api/v1/web/20f83a2c-f58c-4a21-a28c-0df5f3666a42/guestbook/read-guestbook-entries-sequence ,
+      url: https://eu-gb.functions.appdomain.cloud/api/v1/web/20f83a2c-f58c-4a21-a28c-0df5f3666a42/guestbook/read-guestbook-entries-sequence.json ,
       dataType: 'json'
     });
   },
@@ -16,7 +16,7 @@ const guestbook = {
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: https://eu-gb.functions.appdomain.cloud/api/v1/web/20f83a2c-f58c-4a21-a28c-0df5f3666a42/guestbook/save-guestbook-entry-sequence  ,
+      url: https://eu-gb.functions.appdomain.cloud/api/v1/web/20f83a2c-f58c-4a21-a28c-0df5f3666a42/guestbook/save-guestbook-entry-sequence.json  ,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
